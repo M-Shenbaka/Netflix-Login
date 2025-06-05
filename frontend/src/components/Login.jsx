@@ -50,7 +50,7 @@ const Login = ()=>
 
         if (!valid) return;
 
-        axios .get(`http://localhost:3000/login?username=${email}&password=${password}`)
+        axios .get(`https://netflix-login-1-l7fk.onrender.com/login?username=${email}&password=${password}`)
         .then((data)=>
         {
             if (data.data === true) 
